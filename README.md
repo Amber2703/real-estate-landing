@@ -26,14 +26,18 @@ Open the index.html file in your preferred web browser.
 # Folder Structure
 
 css/: Compiled CSS files.
+
 scss/: SCSS source files.
+
 images/: Images used in the landing page.
+
 index.html: Main HTML file.
+
 
 
 # Contributing
 
 Feel free to contribute to the project by opening issues or pull requests. Any feedback is highly appreciated.
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
