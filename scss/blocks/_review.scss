@@ -1,0 +1,95 @@
+.review {
+	background: $black;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1600px;
+  margin: 0 auto;
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			color: $white;
+			margin-bottom: 36px;
+		}
+
+		&__top-title {
+			width: 598px;
+			font-size: 2.5rem;
+font-weight: 700;
+line-height: 120%; /* 48px */
+		}
+
+		&__top-text {
+			width: 522px;
+			margin-left: 176px;
+			font-size: 1.125rem;
+line-height: 30px; /* 166.667% */
+margin-bottom: 24px;
+opacity: 0.8;
+		}
+
+		&__top-btn {
+			display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $font-secondary;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 120%;
+    gap: 4px;
+    border-radius: 32px;
+    background: $primary;
+    // border: 1px solid $primary;
+    // backdrop-filter: blur(3.5px);
+    text-transform: uppercase;
+	margin-left: 176px;
+		}
+
+		&__cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 60px;
+			color: $white;
+		}
+
+		// &__cards-item {
+		// }
+}
+
+.item {
+	
+
+		&__picture {
+			width: 390px;
+			margin-bottom: 16px;
+			// border-radius: 4px;
+		}
+
+		&__person {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 25px;
+		}
+
+		&__person-name {
+			font-weight: 700;
+line-height: 160%;
+		}
+
+		&__person-position {			
+line-height: 160%; /* 24px */
+opacity: 0.699999988079071;
+		}
+
+		&__text {
+			font-size: 1.3125rem;
+font-weight: 500;
+line-height: 32px; /* 152.381% */
+margin-bottom: 12px;
+		}
+
+		// &__stars {
+		// }
+}

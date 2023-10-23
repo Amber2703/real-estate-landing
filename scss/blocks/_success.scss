@@ -1,0 +1,137 @@
+.success {
+  padding-top: 120px;
+  padding-bottom: 120px;  
+
+  // &__title {
+
+  // }
+
+  &__title-text {
+    width: 598px;
+    color: $text-primary;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3;
+    margin-bottom: 86px;
+  }
+
+  // &__title-picture {
+  // }
+
+  &__info {
+    margin-left: 40px;
+  }
+
+  &__info-text {
+    width: 522px;
+    color: $grey;
+    font-size: 1.125rem;
+    line-height: 30px; /* 166.667% */
+    margin-left: 136px;
+    margin-bottom: 34px;
+  }
+
+  &__info-btn {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-family: $font-secondary;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 120%;
+    gap: 4px;
+    border-radius: 32px;
+    background: $primary;
+    // border: 1px solid $primary;
+    // backdrop-filter: blur(3.5px);
+    text-transform: uppercase;
+    margin-left: 136px;
+    margin-bottom: 84px;
+    // transition: all 0.2s ease-in;
+  }
+
+  &__info-address {
+    width: 287px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    margin-bottom: 16px;
+  }
+
+  &__info-item {
+    margin-bottom: 13px;
+  }
+
+  &__info-states {
+    padding-top: 11px;
+    padding-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 19px;
+    color: $text-on-white;
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    li {
+      position: relative;
+      padding-left: 30px; /* Add padding to create space for the check-icon */
+    }
+
+    li:before {
+      content: "";
+      background-image: url(/img/success/icon-check.svg);
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 22px; /* Adjust the width and height to match the icon size */
+      height: 22px;
+    }
+  }
+
+  &__info-description {
+    width: 585px;
+    color: $text-on-white;
+    line-height: 160%; /* 25.6px */
+    margin-bottom: 8px;
+  }
+
+  &__info-link {
+    display: inline-block;
+    padding-bottom: 5px; /* Add some padding below the text to make space for the arrow */
+    background-image: url("./../../img/success/read-more.svg");
+    background-size: contain; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    color: $primary;
+    font-weight: 500;
+  }
+}
+
+.item {
+  // &__icon {
+  // }
+
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    margin-left: 2px;
+  }
+}
+// .link {
+
+//     &__text {
+//     }
+
+//     &__arrow {
+//     }
+// }
+
+.success__about {
+  display: flex;
+  justify-content: space-between;
+}

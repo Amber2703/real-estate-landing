@@ -1,0 +1,53 @@
+.header {
+  &__nav-btns {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__nav-btn {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    color: $text-primary;
+    font-family: $font-secondary;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 120%;
+    gap: 4px;
+    border-radius: 32px;
+    border: 1px solid $primary;
+    backdrop-filter: blur(3.5px);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+  }
+  
+  &__nav-btn:hover {
+    color: $white;
+    background-color: $primary;
+    svg path {
+      stroke: $white;
+    }
+  }
+}
+
+.header__nav-btns {
+  // display: none;
+  @include mediaTablet {
+      display: none;
+  }
+  
+}
+
+
+.header__nav-btn1 {
+  @include mediaTablet {
+    position: fixed;
+  top: 35px;
+  right: 35px;
+}
+//   @include mediaMobile {
+//   right: 35px;
+// }
+  
+}

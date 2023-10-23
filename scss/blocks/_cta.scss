@@ -1,0 +1,155 @@
+// .cta {
+// 	padding: 180px 0;
+
+	
+// }
+
+// .cta__title {
+// 	margin-bottom: 17px;
+// }
+
+// .cta__wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 30px;
+
+//     @include mediaTablet {
+//         grid-template-columns: 1fr;
+//     }
+// }
+
+// .cta__text {
+//     line-height: 1.5;
+
+//     p + p {
+//         margin-top: 1em;
+//     }
+
+//     @include mediaTablet {
+//         font-size: 14px;
+//     }
+// }
+
+// .cta__form {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 35px 30px;
+
+//     @include mediaTablet {
+//         grid-template-columns: 1fr;
+//     }
+// }
+
+.cta {
+    position: relative;
+    flex-wrap: wrap;
+  margin: 0 auto;
+  background: $primary;
+  color: $white;
+max-width: 1600px;
+height: 680px;
+
+    &__top {
+        padding: 120px 0px 60px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {   
+        width: 598px;     
+font-size: 2.5rem;
+font-weight: 700;
+line-height: 120%; 
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 176px;
+    }
+
+    &__info-text {        
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 30px; 
+margin-bottom: 24px;
+    }
+
+    &__btn {
+        width: 146px;
+        height: 40px;
+        display: flex;
+padding: 5px 10px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 32px;
+background: $white;
+backdrop-filter: blur(3.5px);
+color: $text-primary;
+font-family: $font-secondary;
+font-size: 0.875rem;
+font-weight: 700;
+line-height: 120%;
+text-transform: uppercase;
+transition: all 0.2s ease-in;
+    }
+
+    &__btn:hover {
+        color: $white;
+        background-color: rgba(0, 56, 128, 0.3);
+        
+        svg path {
+          stroke: $white;
+        }
+      }
+
+    &__wrapper {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 89px;
+    }
+
+    &__wrapper-item {
+        position: relative; /* Add relative positioning to the items */
+  padding-right: 85px;
+    }
+
+    &__wrapper-item::before {
+        content: ''; /* Add content to the pseudo-element */
+        position: absolute;
+        top: 50px;
+        right: 4px;
+        width: 3px; /* Set the width of the vertical line */
+        height: 150px; /* Set the height of the vertical line */
+        opacity: 0.10000000149011612;
+background: $white; /* Set the color of the vertical line */
+      }
+      
+      &__wrapper-item:last-child::before {
+        display: none; /* Remove the right border for the last item */
+      }
+
+      &__wrapper-item:last-child {
+        padding-right: 0;
+      }
+
+    &__icon {
+        margin-bottom: 40px;
+    }
+
+    &__text {     
+        width: 316px;   
+        line-height: 160%; /* 25.6px */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.cta__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,104 @@
+.advantages {
+    
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 50px;
+}
+
+.advantage {
+    height: 525px;
+  display: flex;
+  gap: 172px;
+  justify-content: start;
+
+  &__left {
+    max-width: 598px;
+  }
+  
+
+  &__left-title {
+    color: $text-primary;
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 40px;
+  }
+
+  
+  .title-2::before {    
+    content: url("./../../img/advantage/icon-check.svg");
+    margin-right: 16px;
+  }
+
+  
+
+  &__left-text {
+    color: $text-on-white;
+    line-height: 25px;
+    padding-left: 50px;
+    
+  }
+
+  .advantage__left-item {    
+    margin-bottom: 12px; 
+  }
+  
+  .advantage__left-item:last-child {
+    margin-bottom: 0; 
+  }
+  
+
+  &__right {
+    max-width: 830px;
+    position: relative;
+  }
+
+  &__right-text {
+    position: absolute;
+    left: 0;
+    top:20px;
+    width: 162px;
+    height: 162px;    
+    border-radius: 72px;
+    border-radius: 72px;
+background: $white-cream;
+color: $text-secondary;
+text-align: center;
+font-family: $font-price;
+font-size: 1.5rem;
+font-weight: 800;
+line-height: 33px; 
+padding: 42px 27px;
+
+  }
+ 
+  &__right-man {
+    position: relative;
+    right: -190px;
+    top:20px;
+  }
+
+  &__right-people {
+    position: relative;
+    top: -35px;
+  }
+
+  &__right-key {
+    position: relative;
+    right: -360px;
+    top:-198px;
+  }
+}
+
+ 
+    
+
+
+
+.title-2 {
+    display: inline-flex; /* Use flexbox for the pseudo-element */
+  align-items: start;
+  font-family: $font-secondary;
+  margin-bottom: 8px;
+}

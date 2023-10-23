@@ -1,0 +1,340 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+
+  padding-top: 34px;
+  padding-bottom: 120px;
+
+  min-height: 1342px;
+
+  @include mediaTablet {
+      min-height: unset;
+      row-gap: 50px;
+  }
+  @include mediaMobile {        
+      row-gap: 30px;
+  }
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  @include mediaMobile {        
+    margin-bottom: 15px;
+}
+     
+}
+
+.header__top-row img {
+  @include mediaTablet {
+    margin-left: 30px;
+  }
+}
+
+
+.header__top-row--mobile {
+    position: fixed;
+    z-index: 9;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 60px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+
+    .header__nav {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .header__nav-btn1 {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+
+    .header__nav-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }  
+    
+    @include mediaTablet {
+      margin: 0;
+    }
+
+}
+
+.header__nav {
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.header__nav-btn1 {
+    display: none;
+    @include mediaTablet {          
+        display: block;
+    }
+    
+    
+}
+
+.header__main {
+  position: relative;
+  height: 849px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background: $primary;
+  color: $white;
+  text-align: center;
+  @include mediaTablet {
+      height: 570px;
+  }
+  @include mediaMobile{
+      height: 1200px;
+      // margin: 0 50px;
+  }
+}
+
+.header__main-img {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  @include mediaTablet {
+    visibility: hidden;
+  }
+}
+
+.header__title {  
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 67px 323px 16px 322px;
+
+  @include mediaTablet {
+      font-size: 2rem;
+      margin: 30px 223px 16px 222px;      
+  }
+  @include mediaMobile {
+      font-size: 1.5rem;
+      margin: 20px 20px 15px 20px;      
+  }
+}
+
+.header__text {  
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0 400px 70px 399px;
+  @include mediaTablet {
+    font-size: 0.8rem;
+    margin: 0 200px 20px 200px;
+}
+  @include mediaMobile {
+    margin: 0 80px 20px;
+}
+}
+
+
+
+.header {
+  &__footer {
+    position: absolute;
+    top: 68%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 1296px;
+    height: 597px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 16px 60px 0px rgba(27, 31, 68, 0.08);
+    margin: 0 auto;
+    @include mediaTablet {
+      width: 875px;
+      height: 460px;
+      border-radius: 8px;
+      top: 82%;
+  }
+
+  @include mediaMobile {      
+    width: 335px;
+    height: 630px;
+    top: 66%;
+}
+  }
+
+  &__footer-title {
+    display: flex;
+    justify-content: center;
+    color: $text-primary;
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 40px 0;
+    @include mediaTablet {
+      margin: 30px 0;
+      font-size: 1.8rem;
+  }
+  @include mediaMobile {
+    margin: 15px 0;
+    font-size: 1.8rem;
+  }
+  }
+
+  &__footer-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    @include mediaTablet {
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    @include mediaMobile {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__footer-states {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+    @include mediaTablet {
+      margin: 0 20px;
+    }
+    @include mediaMobile {
+      display: block;
+      margin: 0 20px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 30px; /* Add padding to create space for the check-icon */
+      @include mediaTablet {
+        padding-left: 25px;
+      }
+      @include mediaMobile {
+        padding-left: 20px;
+      }
+    }
+
+    li:before {
+      content: "";
+      background-image: url(/img/header/check-icon.svg);
+      background-size: cover;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 22px; /* Adjust the width and height to match the icon size */
+      height: 22px;
+      @include mediaTablet {
+        width: 15px;
+        height: 15px;
+      }
+      
+    }
+  }
+}
+.card__left {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  @include mediaMobile {
+    max-width: 375px;    
+  margin: 0 auto 20px;
+  }
+}
+
+.card__left-img {
+  border: 2px solid transparent;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.card__left:hover .card__left-img {
+  border: 2px solid $green;
+  border-radius: 8px;
+  transform: scale(0.97);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+.card__left-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  z-index: 1;
+
+  @include mediaTablet {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+.card__left:hover .card__left-icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
+}
+
+.card__right {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  @include mediaMobile {
+    max-width: 375px;
+  margin: 0 auto 20px;
+  }
+}
+
+.card__right-img {
+  border: 2px solid transparent;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.card__right:hover .card__right-img {
+  border: 2px solid $green;
+  border-radius: 8px;
+  transform: scale(0.97);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
+.card__right-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  z-index: 1;
+
+  @include mediaTablet {
+      width: 80px;
+      height: 80px;
+  }
+}
+
+.card__right:hover .card__right-icon {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: saturate(1.5);
+}

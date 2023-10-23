@@ -1,0 +1,52 @@
+.aspirations {
+  background: $white-bg;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.aspiration {
+  display: flex;
+  justify-content: space-between;
+
+//   &__vision {
+//   }
+
+  &__vision-title {    
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  &__vision-text {
+    width: 557px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+
+//   &__vision-picture {
+//   }
+
+//   &__mission {
+//   }
+
+  &__mission-picture {
+    margin-bottom: 32px;
+  }
+
+  &__mission-title {    
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  &__mission-text {
+    width: 557px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;    
+  }
+}
